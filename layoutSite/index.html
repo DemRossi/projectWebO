@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>The ultimate Game</title>
+    <meta name="description" content="Ultimate Game is gemaakt door gamers voor gamers. Zo kan je je eigen review schrijven over je favoriete game.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styleHome.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div id="container">
+        <header>
+            <div id="headWrapper">
+                <div class="logo"><h2>The ultimate GameRev</h2></div>
+                <div id="burger" class="menuButton"></div>
+                <div class="clearfix"></div>
+                <nav>
+                    <ul id="menu" class="weg openTransition">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#behandeling">PC</a></li>
+                        <li><a href="#aanbiedingen">PS4</a></li>
+                        <li><a href="#prijslijst">Xbox One</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+
+        </main>
+        <footer>
+            <div>
+                   Icons made by 
+                   <a href="http://www.freepik.com" title="Freepik">Freepik</a>
+                    from
+                     <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by 
+                     <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+            </div>
+                    </footer>
+    </div>
+    
+    <!-- Start JavaScript -->
+    <!-- Start navigation -->
+    <script>
+        var menuButton = document.querySelector(".menuButton");
+        var menu = document.getElementById('menu');
+        var burger = document.getElementById('burger');
+        var uitklap = document.querySelector("#headWrapper");
+
+        menuButton.addEventListener("click", geklikt);
+
+        function geklikt(evt) {
+            if ( menu.classList.contains('weg')){
+                menu.classList.remove("weg");
+                burger.classList.remove("menuButton");
+                burger.classList.add("closeButton");
+                uitklap.classList.toggle("border");
+                uitklap.classList.add("vertTranslate");
+            }
+            else{
+                menu.classList.add("weg");
+                burger.classList.remove("closeButton");
+                burger.classList.add("menuButton");
+            }
+        }
+        
+        
+    </script>
+    
+    <!-- End Navigation -->
+    <!-- End JavaScript -->
+</body>
+</html>
