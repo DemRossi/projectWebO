@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100vw;
+    height: 80px;
+    
+    position: relative;
+    
+}
+#headerWrapper {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    
+    background-color: #eee;
+}
+.headSide{
+    width: 15vw;
+    height: 150px;
+    background-color: #eee;
+    float: left;
+    z-index: -10;
+
+    background-clip: content-box; 
+    border-left: 1px solid black;
+    border-image: linear-gradient(to top, #000 45%, rgba(0,0,0,0) 50%); /* to top - at 50% transparent */
+    border-right: 1px solid black;
+    border-image: linear-gradient(to top, #000 45%, rgba(0,0,0,0) 50%); 
+    border-bottom: 1px solid black;
+    
+    border-image-slice: 1;
+    
+}
+.left{
+    border-left: 0px solid;
+}
+.right{
+    
+    border-right: 0px solid;
+}
+#headNav{
+    width: 70vw;
+    height: 80px;
+    float: left;
+    
+    background-clip: content-box;
+    border-bottom: 1px solid black;
+    border-image: linear-gradient(to top, #000 35%, rgba(0,0,0,0) 50%); 
+    border-image-slice: 1;
+}
+
+#headNav ul li{
+    color: beige;
+    width: 25%;
+    height: 80px;
+    float: left;
+    list-style: none;
+    text-align: center;
+    line-height: 80px;
+}
+/*************end Header*************/
+#imgSect {
+    
+}
+#contextSect {
+    
+}
+
+
+
+/******helpclasses*****/
+.clearfix{
+    clear: both;
+}
+
+
