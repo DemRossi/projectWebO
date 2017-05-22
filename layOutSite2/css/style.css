@@ -3,10 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*************start Header*************/
 header{
     width: 100vw;
     height: 80px;
-    
+    z-index: 10;
     position: relative;
     
 }
@@ -15,12 +16,12 @@ header{
     height: 80px;
     position: fixed;
     
-    background-color: #eee;
+    background-color: #aaa;
 }
 .headSide{
     width: 15vw;
     height: 150px;
-    background-color: #eee;
+    background-color: #aaa;
     float: left;
     z-index: -10;
 
@@ -33,6 +34,9 @@ header{
     
     border-image-slice: 1;
     
+}
+.headSide:after{
+    clear: both;
 }
 .left{
     border-left: 0px solid;
@@ -62,8 +66,31 @@ header{
     line-height: 80px;
 }
 /*************end Header*************/
+/*************start Main*************/
 #imgSect {
+    width: 100vw;
+    height: 70vh;
+    border: 1px solid black;
+    z-index: -10;
+    position: relative;
     
+}
+.demo5 .bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.ibg-bg {
+  position: absolute;
+}
+.bg{
+    position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+     
 }
 #contextSect {
     
@@ -71,7 +98,7 @@ header{
 
 
 
-/******helpclasses*****/
+/******hulpclasses*****/
 .clearfix{
     clear: both;
 }
